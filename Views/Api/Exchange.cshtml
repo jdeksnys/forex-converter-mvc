@@ -1,0 +1,111 @@
+﻿@model ValueCalculator
+@{ViewData["Title"] = "Exchange Rates"; }
+@using forex_converter_mvc.Services;
+@using forex_converter_mvc.Controllers;
+
+<div class="text-center">
+    <h1 class="display-4">Currency Converter</h1>
+    <p>Built with ASP.NET Core MVC using <a href="https://developer.sebgroup.com/products">SEB Foreign Exchange Rates API</a>.</p>
+</div>
+
+
+
+<br>
+
+<!--disable scroll wheel in <input type="number" />-->
+<style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
+
+
+
+<form method="POST">
+
+    <!--Label-->
+    <span style="position:relative; display:inline-block; margin-left: 51%; padding: 4px; width:auto;">
+        Currency from:
+    </span>
+
+    <!--"Amount" input-->
+    <span class="form-group" style="position:relative; display:inline-block; margin-left: 20%; padding: 4px; width:30%;">
+        <input required asp-for="Amount" class="form-control" type="number" min="0" step="0.01" autocomplete="off"
+               placeholder="@if (TempData.ContainsKey("ValueCalculator"))
+                            {
+                                var v = TempData.Get<ValueCalculator>("ValueCalculator");
+                                @v.Amount;
+                            }" />
+    </span>
+
+    <!--"Currency from" input-->
+    <span style="position:relative; display:inline-block; margin-left: auto; padding: 4px; width:30%;">
+        <select required asp-for="CurrencyFrom" class="form-control" asp-items="new SelectList(ViewBag.CurrenciesFrom)">
+            <option selected>
+                @if (TempData.ContainsKey("ValueCalculator"))
+                {
+                    var v = TempData.Get<ValueCalculator>("ValueCalculator");
+                    @v.CF;
+                }
+            </option>
+        </select>
+    </span>
+
+
+
+
+    <!--Label-->
+    <span style="position:relative; display:inline-block; margin-left: 51%; padding: 4px; width:auto;">
+        Currency to:
+    </span>
+
+    <!--Exchange output-->
+    <span class="form-group" style="position: relative; display: inline-block; margin-left: 20%; padding: 4px; width: 30%; border: 1px solid LightGray;">
+        @if (TempData.ContainsKey("ValueCalculator"))
+        {
+            var v = TempData.Get<ValueCalculator>("ValueCalculator");
+            @v.ResultAmount;
+        }
+        &nbsp
+    </span>
+
+    <!--"Currency to" input-->
+    <span style="position:relative; display:inline-block; margin-left: auto; padding: 4px; width:30%;">
+        <select required asp-for="CurrencyTo" class="form-control" asp-items="new SelectList(ViewBag.CurrenciesTo)">
+            <option>
+                @if (TempData.ContainsKey("ValueCalculator"))
+                {
+                    var v = TempData.Get<ValueCalculator>("ValueCalculator");
+                    @v.CT;
+                }
+            </option>
+        </select>
+    </span>
+
+
+
+    <!--Date output-->
+    <br>
+    <span style="position: relative; display: inline-block; margin-left: 20%; padding: 4px; width: 30%;">
+        @if (TempData.ContainsKey("ValueCalculator"))
+        {
+            var v = TempData.Get<ValueCalculator>("ValueCalculator");
+            <h>
+                Exchange rate updated: @v.date
+            </h>
+
+            @if (ApiController.ErrorMessage != null)
+            {
+                <hr>
+                <h>
+                    @ApiController.ErrorMessage                 
+                </h>
+            }
+        }
+        </span>
+
+    <!--Button-->
+    <button class="btn-primary" type="submit" onclick="await location.href='@Url.Action("Exchange", "Api")'" value="Convert" style="position:relative; display:inline-block; margin-left: auto" ;>Convert</button>
+</form>

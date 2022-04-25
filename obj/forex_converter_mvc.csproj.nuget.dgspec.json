@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jonasdeksnys/Desktop/_programming/forex_converter_mvc/forex_converter_mvc/forex_converter_mvc.csproj": {}
+  },
+  "projects": {
+    "/Users/jonasdeksnys/Desktop/_programming/forex_converter_mvc/forex_converter_mvc/forex_converter_mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jonasdeksnys/Desktop/_programming/forex_converter_mvc/forex_converter_mvc/forex_converter_mvc.csproj",
+        "projectName": "forex_converter_mvc",
+        "projectPath": "/Users/jonasdeksnys/Desktop/_programming/forex_converter_mvc/forex_converter_mvc/forex_converter_mvc.csproj",
+        "packagesPath": "/Users/jonasdeksnys/.nuget/packages/",
+        "outputPath": "/Users/jonasdeksnys/Desktop/_programming/forex_converter_mvc/forex_converter_mvc/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jonasdeksnys/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Azure.Extensions.AspNetCore.Configuration.Secrets": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Azure.Security.KeyVault.Secrets": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.Extensions.Configuration.AzureKeyVault": {
+              "target": "Package",
+              "version": "[3.1.24, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.2.6, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+﻿  {
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:27665",
+      "sslPort": 44367
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "KeyVaultName": "Authorization",
+        "KEYVAULT_ENDPOINT": "https://forex-converter-keyvault.vault.azure.net/",
+        "AZURE_CLIENT_ID": "2e116f31-8096-460f-b0d8-61a1afbf5286",
+        "AZURE_TENANT_ID": "46000017-5f6a-4882-8fb9-b0d6bd6d51b8",
+        "AZURE_CLIENT_SECRET": "Q2Q8Q~scVSD.v6U673NS4HnyBIwxNmWnV6hAZc3r"
+      }      
+    },
+    "forex_converter_mvc": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "KeyVaultName": "Authorization",
+        "KEYVAULT_ENDPOINT": "https://forex-converter-keyvault.vault.azure.net/",
+        "AZURE_CLIENT_ID": "2e116f31-8096-460f-b0d8-61a1afbf5286",
+        "AZURE_TENANT_ID": "46000017-5f6a-4882-8fb9-b0d6bd6d51b8",
+        "AZURE_CLIENT_SECRET": "Q2Q8Q~scVSD.v6U673NS4HnyBIwxNmWnV6hAZc3r"
+      }      
+    }
+  }
+}

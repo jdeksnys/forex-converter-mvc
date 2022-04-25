@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{1B161641-6888-4665-B01E-C8E19382135C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ApiController.cs">
+    <Files>
+      <File FileName="Controllers/ApiController.cs" Line="62" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="forex_converter_mvc" expanded="True">
+            <Node name="forex_converter_mvc" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ApiController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Api" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.forex__converter__mvc PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jonasdeksnys/Desktop/_programming/forex_converter_mvc/forex_converter_mvc/Controllers/ApiController.cs" relfile="Controllers/ApiController.cs" line="92" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="forex-converter-mvc" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^/Users/jonasdeksnys/Desktop/_programming/forex_converter_mvc/forex_converter_mvc/obj/Release/net5\.0/PubTmp/Out/$" />
+  </parameter>
+</parameters>
