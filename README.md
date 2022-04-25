@@ -1,6 +1,5 @@
-# Foreign exchange currency converter
+# Foreign exchange currency converter http://forex-converter-mvc.azurewebsites.net
 
-**Link: http://forex-converter-mvc.azurewebsites.net**<br/>
 *Note!*
 *Forex market closed on weekends (thus sandbox API called for demo).*
 
