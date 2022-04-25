@@ -16,7 +16,8 @@ ASP.NET Core MVC app calling to SEB Foreign Exchange API (https://developer.sebg
 - How MVC works,
 - Post-redirect-get design pattern,
 - Elementary Html user input and validation,
-- Use IHttpClientFactory for API requests.
+- Use IHttpClientFactory for API requests,
+- Blazor (c#) can partly replace Javascript.
 
 
 ### Challenges in development
